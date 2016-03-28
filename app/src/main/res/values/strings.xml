@@ -1,0 +1,126 @@
+<resources>
+
+    <string name="app_name">PythonBrasil</string>
+
+    <!-- Main screen -->
+    <string name="main_menu">Menu Principal</string>
+    <string name="close_menu">Fechar menu</string>
+    <string name="last_update">Última atualização %1$s</string>
+    <string name="download_reminder_title">Atualizar</string>
+    <string name="download_reminder_message">A grade horária será atualizada para a última versão. Verifique que você está conectado à Internet.</string>
+    <string name="never">nunca</string>
+    <string name="update_events_db">Atualizar banco-de-dados de palestras</string>
+    <string name="events_download_up_to_date">Banco-de-dados já está na última versão</string>
+    <string name="events_download_empty">Nenhuma palestra nova encontrada</string>
+
+    <plurals name="events_download_completed">
+        <item quantity="one">Download de %1$d palestra completo</item>
+        <item quantity="other">Download de %1$d palestras completo</item>
+    </plurals>
+
+    <!-- Main menu -->
+    <string name="menu_tracks">Trilhas</string>
+    <string name="menu_bookmarks">Favoritos</string>
+    <string name="menu_live">Ao Vivo</string>
+    <string name="menu_speakers">Palestrantes</string>
+    <string name="menu_map">Mapa</string>
+
+    <!-- Bookmarks -->
+    <string name="filter">Filtrar</string>
+    <string name="upcoming_only">No futuro</string>
+    <string name="no_bookmark">Sem favoritos</string>
+    <string name="remove_bookmarks">Remover favoritos</string>
+
+    <plurals name="selected">
+        <item quantity="other">%1$d selecionados</item>
+    </plurals>
+
+    <!-- Live -->
+    <string name="next">Em Breve</string>
+    <string name="next_empty">Durante a PythonBrasil, as palestras nos próximos 30 minutos serão exibidas aqui.</string>
+    <string name="now">Agora</string>
+    <string name="now_empty">Durante a PythonBrasil, as palestras em andamento serão exibidas aqui.</string>
+
+    <!-- Track types -->
+    <string name="other">Outro</string>
+    <string name="keynote">Keynote</string>
+    <string name="main_track">Trilha Principal</string>
+    <string name="developer_room">Developer room</string>
+    <string name="lightning_talk">Palestra Relampago</string>
+    <string name="certification_exam">Certificação</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="misc">Misc</string>
+    <string name="talk">Palestra</string>
+
+    <!-- Search -->
+    <string name="search_events">Procurar Palestras</string>
+    <string name="search_settings_description">Palestras</string>
+    <string name="search_hint">Palestra, trilha, pessoa</string>
+    <string name="no_search_result">Nenhum resultado encontrado.</string>
+
+    <!-- Errors -->
+    <string name="error_title">Erro</string>
+    <string name="event_not_found_error">Não foi possível carregar os detalhes da palestra.\nVerifique que o bando-de-dados de palestras está na última versão.</string>
+    <string name="schedule_loading_error">Um erro aconteceu ao atualizar a agenda. Por favor tente novamente mais tarde.</string>
+    <string name="search_length_error">O tamanho mínimo de texto para busca é de 3 caracteres.</string>
+
+    <!-- Settings -->
+    <string name="settings">Configuração</string>
+    <string name="settings_notifications">Notificações</string>
+    <string name="settings_notifications_enabled_title">Ativar notificações</string>
+    <string name="settings_notifications_enabled_summary">Se ativado, notificações sobre palestras favoritas serão enviadas</string>
+    <string name="settings_notifications_vibrate_title">Vibrar</string>
+    <string name="settings_notifications_vibrate_summary">Vibrar com notificações</string>
+    <string name="settings_notifications_led_title">Piscar led</string>
+    <string name="settings_notifications_led_summary">Piscar o led com notificações</string>
+    <string name="settings_notifications_delay_title">Tempo de notificação</string>
+
+    <string-array name="settings_notifications_delay_entries">
+        <item>5 minutos</item>
+        <item>10 minutos</item>
+        <item>15 minutos</item>
+        <item>30 minutos</item>
+        <item>1 hora</item>
+    </string-array>
+    <string-array name="settings_notifications_delay_entry_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <string name="settings_notifications_delay_summary">Tempo antes de palestras favoritas para disparar notificações</string>
+
+    <!-- Event details -->
+    <string name="related_links_header">Links Relacionados</string>
+    <string name="add_bookmark">Adicionar aos favoritos</string>
+    <string name="remove_bookmark">Remover dos favoritos</string>
+    <string name="share">Compartilhar</string>
+    <string name="add_to_agenda">Adicionaro ao calendário</string>
+    <string name="calendar_not_found">Nenhum aplicativo de calendário compatível encontrado.</string>
+
+    <plurals name="speakers">
+        <item quantity="one">Palestrante</item>
+        <item quantity="other">Palestrantes</item>
+    </plurals>
+
+    <!-- Speaker info -->
+    <string name="talks_header">Palestras</string>
+    <string name="more_info">Mais informação</string>
+
+    <!-- Others -->
+    <string name="room_map">Mapa da sala</string>
+    <string name="directions">Caminho para a conferência</string>
+    <string name="no_data">Dados não disponíveis.</string>
+    <string name="about">Sobre</string>
+    <string name="about_text">Aplicativo da <a href="http://pythonbrasil.org.br">PythonBrasil</a>
+\n
+\nBaseado no FOSDEM Companion, desenvolvido por <a href="http://www.digitalia.be/">Christophe Beyls</a>.
+\n
+\nLicenciado sob a Apache License, versão 2.0. Código-fonte disponível no <a href="https://github.com/rodolphoeck/py-eventos-android">GitHub</a>.
+\n
+\n<small>Esse aplicativo usa as seguintes bibliotecas:
+\n- <a href="http://developer.android.com/tools/support-library/">Android Support Library</a><i> by The Android Open Source Project</i>\n- <a href="http://viewpagerindicator.com/">ViewPagerIndicator</a><i> por Jake Wharton</i>\n- <a href="https://github.com/chrisbanes/PhotoView">PhotoView</a><i> por Chris Banes</i></small></string>
+
+</resources>
