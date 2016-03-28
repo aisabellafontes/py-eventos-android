@@ -11,8 +11,6 @@ import br.org.pythonbrasil.pyeventos.utils.DateUtils;
 
 public class Day implements Parcelable {
 
-	private static final DateFormat DAY_DATE_FORMAT = DateUtils.withBrasiliaTimeZone(new SimpleDateFormat("EEEE", Locale.US));
-
 	private int index;
 	private Date date;
 
@@ -36,11 +34,15 @@ public class Day implements Parcelable {
 	}
 
 	public String getName() {
-		return String.format(Locale.US, "Day %1$d (%2$s)", index, DAY_DATE_FORMAT.format(date));
+		Locale ptBr = new Locale("pt", "BR");
+		DateFormat ddFmt = DateUtils.withBrasiliaTimeZone(new SimpleDateFormat("EEEE", ptBr));
+		return String.format(Locale.US, "Dia %1$d (%2$s)", index, ddFmt.format(date));
 	}
 
 	public String getShortName() {
-		return DAY_DATE_FORMAT.format(date);
+		Locale ptBr = new Locale("pt", "BR");
+		DateFormat ddFmt = DateUtils.withBrasiliaTimeZone(new SimpleDateFormat("EEEE", ptBr));
+		return ddFmt.format(date);
 	}
 
 	@Override
